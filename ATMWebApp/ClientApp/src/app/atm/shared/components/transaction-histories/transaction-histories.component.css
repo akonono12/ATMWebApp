@@ -1,0 +1,10 @@
+.atm-history{
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.header{
+  position: sticky;
+  top: -1px;
+  background-color: white;
+}

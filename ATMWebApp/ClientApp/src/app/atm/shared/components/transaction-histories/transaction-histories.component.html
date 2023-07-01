@@ -1,0 +1,17 @@
+<h3 class="title mt-2 mb-2">Transaction History</h3>
+<hr/>
+<div class="atm-history container" >
+  <div class="row justify-content-center header">
+    <h5 class="col-4 col-md-4 col-lg-4 center-tile">Mode</h5>
+    <h5 class="col-4 col-md-4 col-lg-4 center-tile">Amount</h5>
+    <h5 class="col-4 col-md-4 col-lg-4 center-tile">Date</h5>
+  </div>
+  <ng-container *ngFor="let transactionHistory of transactionHistories">
+    <div class="row justify-content-center">
+      <span class="col-4 col-md-4 col-lg-4 center-tile">{{transactionHistory.transactionModes == 0 ? "Withdrawal":"Deposit"}}</span>
+      <span class="col-4 col-md-4 col-lg-4 center-tile">{{transactionHistory.amount| currency:'$':'symbol':'2.2'}}</span>
+      <span class="col-4 col-md-4 col-lg-4 center-tile">{{transactionHistory.transactionDate | date:'MMM/dd/YY HH:mm:ss' }}</span>
+    </div>
+  </ng-container>
+</div>
+<hr/>

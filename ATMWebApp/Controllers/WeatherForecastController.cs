@@ -29,5 +29,10 @@ namespace ATMWebApp.Controllers
             })
             .ToArray();
         }
+        [HttpGet("test")]
+        public async Task<IActionResult> Test()
+        {
+            return Ok("This is a test");
+        }
     }
 }

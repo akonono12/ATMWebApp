@@ -1,4 +1,4 @@
-﻿namespace ClassLibrary2
+﻿namespace ATMWebApp.Common
 {
     public class Class1
     {

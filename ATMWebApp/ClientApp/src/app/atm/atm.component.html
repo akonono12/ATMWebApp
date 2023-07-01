@@ -1,0 +1,49 @@
+<h1>ATM</h1>
+
+<p>This is a simple atm web application.</p>
+<div class="col-md-12 mb-3">
+ <app-login (login)="validateLogin($event)" *ngIf="!isLoggedIn"></app-login>
+  <div class="row mb-4" *ngIf="isLoggedIn">
+    <div class="col-md-6 col-lg-6" >
+      <app-account [account]="account" (withdraw)="withdrawCash($event)" (deposit)="depositCash($event)"></app-account>
+     </div>
+     <div class="col-md-6 col-lg-6" >
+      <app-transaction-histories [transactionHistories]="transactionHistories"></app-transaction-histories>
+     </div>
+  </div>
+  <div class="row" *ngIf="isLoggedIn">
+    <div class="col text-center">
+      <button type="submit" class="btn-lg btn-primary" (click)="onLogout()">Logout</button>
+    </div>
+  </div>
+
+<div *ngIf="!isLoggedIn">
+  <h3 class="title mt-2 mb-2">Accounts</h3>
+  <hr/>
+  <div class="atm-history container" >
+    <div class="row justify-content-center header">
+      <h5 class="col-4 col-md-4 col-lg-4 center-tile">Name</h5>
+      <h5 class="col-4 col-md-4 col-lg-4 center-tile">Pin</h5>
+      <h5 class="col-4 col-md-4 col-lg-4 center-tile">Password</h5>
+    </div>
+      <div class="row justify-content-center">
+        <span class="col-4 col-md-4 col-lg-4 center-tile">Leo Gem</span>
+        <span class="col-4 col-md-4 col-lg-4 center-tile">1234</span>
+        <span class="col-4 col-md-4 col-lg-4 center-tile">pass123</span>
+      </div>
+      <div class="row justify-content-center">
+        <span class="col-4 col-md-4 col-lg-4 center-tile">Ares Tau</span>
+        <span class="col-4 col-md-4 col-lg-4 center-tile">4321</span>
+        <span class="col-4 col-md-4 col-lg-4 center-tile">pass321</span>
+      </div>
+      <div class="row justify-content-center">
+        <span class="col-4 col-md-4 col-lg-4 center-tile">Virgo Pi</span>
+        <span class="col-4 col-md-4 col-lg-4 center-tile">678901</span>
+        <span class="col-4 col-md-4 col-lg-4 center-tile">pass789</span>
+      </div>
+  </div>
+  <hr/>
+</div>
+
+
+</div>

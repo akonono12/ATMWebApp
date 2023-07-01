@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ATMWebApp.Domain
+﻿namespace ATMWebApp.Domain
 {
     public class Class1
     {
+
     }
 }

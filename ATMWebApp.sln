@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ATMWebApp.Web", "ATMWebApp\ATMWebApp.Web.csproj", "{0AC056A0-AD21-4E4A-B597-56F34B488ECA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ATMWebApp.Web", "ATMWebApp.Web\ATMWebApp.Web.csproj", "{0AC056A0-AD21-4E4A-B597-56F34B488ECA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ATMWebApp.Domain", "ATMWebApp.Domain\ATMWebApp.Domain.csproj", "{66490861-116B-4F16-A60F-51036610359D}"
 EndProject
